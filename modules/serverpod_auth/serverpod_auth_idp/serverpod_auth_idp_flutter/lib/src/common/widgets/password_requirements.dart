@@ -24,10 +24,14 @@ class PasswordRequirement {
   static final numbers = RegExp(r'[0-9]');
 
   /// Regular expression for special characters.
-  static final specialCharacters = RegExp(r'''[!@#$%^&*(),.?"'`:;{}|/\\<>~=+_-]''');
+  static final specialCharacters = RegExp(
+    r'''[!@#$%^&*(),.?"'`:;{}|/\\<>~=+_-]''',
+  );
 
   /// Regular expression for all allowed characters.
-  static final allowedCharacters = RegExp(r'''[a-zA-Z0-9!@#$%^&*(),.?"'`:;{}|/\\<>~=+_-]''');
+  static final allowedCharacters = RegExp(
+    r'''[a-zA-Z0-9!@#$%^&*(),.?"'`:;{}|/\\<>~=+_-]''',
+  );
 
   /// Creates a [PasswordRequirement] for a minimum length.
   factory PasswordRequirement.minLength(int length) => PasswordRequirement(
